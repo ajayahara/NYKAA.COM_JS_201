@@ -28,6 +28,19 @@
         height: 80%;
         display: flex;
       }
+      h1 {
+        font-size: 20px;
+        font-weight: 550;
+        line-height: 24px;
+        margin: 0;
+        color: #001325;
+        font-family: Inter, Roboto, Arial, sans-serif;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+      }
       #inner1 {
         border: 1px solid green;
         width: 20%;
@@ -39,19 +52,24 @@
         justify-content: space-between;
         justify-items: center;
       }
+
       #inner1 > div {
-        /* position: relative; */
-        border: 2px solid blue;
         height: 50px;
         width: 65%;
         margin-bottom: 16px;
-        max-height: 50px !important;
+
         cursor: pointer;
         border-radius: 2px;
         padding: 0.25rem;
         border-style: solid;
         border-width: 1px;
-        border-color: rgba(182, 0, 0, 0.4);
+        border-color: #c1c9cf;
+      }
+      #inner1 > div:first-child {
+        border-color: #e29999;
+      }
+      #inner1 > div:hover {
+        border-color: #e29999;
       }
       .imginner {
         width: 100%;
@@ -62,6 +80,9 @@
         height: 100%;
       }
       #fullDetail {
+        padding-top: 15px;
+        display: block;
+        gap: 10px;
         border: 2px solid greenyellow;
         width: 60%;
       }
@@ -77,6 +98,8 @@
       }
       .div20 {
         display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 20px;
         gap: 20px;
         justify-items: center;
@@ -87,19 +110,81 @@
         height: 50px;
       }
       .offersdiv {
+        margin-top: 10px;
+        margin-bottom: 10px;
         background-color: #eceef0;
         padding: 10px;
       }
       .shades {
-        display: grid;
+        margin-top: 10px;
+        display: flex;
         width: 100%;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-columns: repeat(auto, 30px);
+        border: 1px solid blue;
+        height: 20%;
         gap: 20px;
       }
+      .shades > div:nth-child(1) {
+        width: 20%;
+      }
+      .shades > div:nth-child(2) {
+        align-items: center;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(auto, 30px);
+        gap: 10px;
+        padding: 0px 10px 0px 10px;
+      }
       .colordiv {
+        cursor: pointer;
         width: 70%;
-        height: 50px;
+        height: 45px;
+      }
+
+      .addBagdiv {
+        height: 30%;
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+      .addBagdiv > div:nth-child(1) {
+        display: grid;
+        justify-items: center;
+        width: 45%;
+      }
+      .addBagdiv > div:nth-child(1) > button {
+        width: 85%;
+
+        padding: 15px 40px 15px 40px;
+        color: white;
+
+        background-color: #fc2779;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+      }
+      .addBagdiv > div:nth-child(2) {
+        width: 55%;
+        padding-left: 5%;
+
+        border-left: 1px solid black;
+        padding: auto 10px auto 10px;
+      }
+      .addBagdiv > div:nth-child(2) > input {
+        margin-top: 10px;
+        border: 2px solid #dde1e4;
+        border-right: none;
+        padding: 10px;
+      }
+      .addBagdiv > div:nth-child(2) > button {
+        margin-top: 10px;
+        border: 2px solid #dde1e4;
+        border-left: none;
+        background-color: white;
+        color: #fc2779;
+        font-weight: 600;
+        padding: 10px;
       }
     </style>
   </head>

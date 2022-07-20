@@ -33,7 +33,7 @@ let append=(data)=>{
     let div20=document.createElement("div")
     div20.setAttribute("class","div20")
     let div2=document.getElementById("fullDetail");
-    let name=document.createElement("h3");
+    let name=document.createElement("h1");
     let rating=document.createElement("p");
     let rate=Math.floor(Math.random() * 5);
     rating.innerText=`${rate}/5`
@@ -82,31 +82,108 @@ let append=(data)=>{
 
     // colorShades of product
     let shade=document.createElement("p");
-    shade.innerText=`All Shades(${data.product_colors.length})`
+    shade.innerText=`All Shades(${data.product_colors.length}) - Choose Shades from here`
     let div4=document.createElement("div");
+   
     div4.setAttribute("class","shades")
     div4.innerHTML=null;
     console.log(data.product_colors)
-
+    let div40=document.createElement("div");
+    div40.style.backgroundColor="#FE93BC";
+    let div41=document.createElement("div");
+    div4.append(div40)
     if(data.product_colors.length===0){
         shade.innerText=`No Shade Available`;
+        div4.style.display="none"
     }else{
         data.product_colors.forEach(el => {
             let div=document.createElement("div");
             div.setAttribute("class","colordiv");
             div.style.backgroundColor=el.hex_value;
             
-            div4.append(div);
+            
+            
+            div.addEventListener("click",function(){
+                addcolor(el,div40);
+            })
+            div41.append(div);
+            div4.append(div41)
          });
+          
+       
+         
     }
+    function addcolor(el,div40){
+        div40.style.backgroundColor=el.hex_value;
+    }
+
+    // add to bag and delivery option section
+
+    let div5=document.createElement("div");
+    div5.setAttribute("class","addBagdiv")
+
+    // add to bag
+    let div50=document.createElement("div")
+    let but=document.createElement("button")
+    but.innerText="Add to Bag"
+    div50.append(but);
+
+
+    // delivery option section
+    let div51=document.createElement("div")
+    div51.setAttribute("id","addressdiv")
+    let h3=document.createElement("h3");
+    h3.innerText="#@ Delivery Options"
+    input=document.createElement("input");
+    input.setAttribute("placeholder","Enter Pincode")
+    input.setAttribute("id","Pincode")
+    let butinput=document.createElement("button")
+    butinput.innerText="Check";
    
+    butinput.addEventListener("click",function(){
+        let query=document.getElementById("Pincode").value;
+        addaddress(query)
+    })
+    div51.append(h3,input,butinput)
+
+    div5.append(div50,div51);
+    
+    // fetch data from pincode
+
+    let addaddress=(query)=>{
+       let url=`https://api.postalpincode.in/pincode/${query}`;
+       fetch(url)
+       .then((res)=>{
+           return res.json();
+       })
+       .then((res)=>{
+        console.log(res[0])
+        append2(res[0]);
+       })
+       .catch((err)=>{
+        console.log(err)
+       })
+
+    }
 
     
 
     div20.append(ratingimg,rating,p1,ratings,p2,p)
-    div2.append(name,div20,MRP,p3,div3,shade,div4)
-
+    div2.append(name,div20,MRP,p3,div3,shade,div4,div5)
+    
 
 
 }
-append(data)
+append(data);
+
+let append2=(data)=>{
+    // if(data.Status==="Error"){
+    //     return false;
+    // }else{
+    //     p0=document.createElement("p");
+    //         p0.innerText="Please enter valid pincode";
+    //         p0.style.color="red";
+    //     console.log(data.PostOffice[0])
+    // }
+    
+}
