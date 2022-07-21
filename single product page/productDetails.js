@@ -1,16 +1,16 @@
 
 
-// let url="https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner"
-// fetch(url)
-// .then((res)=>{
-//     return res.json()
-// })
-// .then((res)=>{
-//     console.log(res[0])
-//     localStorage.setItem("nykaa",JSON.stringify(res[2]))
-// })
-// .catch((err)=>{
-// })
+let url="https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=mascara"
+fetch(url)
+.then((res)=>{
+    return res.json()
+})
+.then((res)=>{
+    console.log(res.length)
+    localStorage.setItem("nykaa",JSON.stringify(res[3]))
+})
+.catch((err)=>{
+})
 
 let data = JSON.parse(localStorage.getItem("nykaa"))||[];
 console.log(data)
@@ -126,9 +126,25 @@ let append=(data)=>{
     let div50=document.createElement("div")
     let but=document.createElement("button")
     but.innerText="Add to Bag"
+
+    but.addEventListener("click",function(){
+        addtoCart(data);
+    })
     div50.append(but);
 
 
+    // Add to cart button functionality
+
+    let Cartlist=JSON.parse(localStorage.getItem("Cartlist"))||[];
+    let addtoCart=(data)=>{
+       Cartlist.push(data);
+       console.log("Cartlist:",Cartlist) 
+       localStorage.setItem("Cartlist",JSON.stringify(Cartlist))
+
+    }
+    
+    
+    
     // delivery option section
     let div51=document.createElement("div")
     div51.setAttribute("id","addressdiv")
@@ -211,40 +227,36 @@ let append=(data)=>{
             p1.innerText="* Delivered within 5 day of order "
             let p2=document.createElement("p");
             p2.innerText="* Cash on Delivery available on orders above ₹499 "
-            let butinput=document.createElement("button")
-           
-           
             
             div.append(p,h3,p1,p2)
 
         }
-        
-     
     
-        // let div=document.getElementById("addressdiv");
-        // div.innerHTML=null;
-        // let h3=document.createElement("h3");
-        // h3.innerText="#@ Delivery Options"
-        // input=document.createElement("input");
-        // input.setAttribute("placeholder","Enter Pincode")
-        // input.setAttribute("id","Pincode")
-        // let butinput=document.createElement("button")
-        // butinput.innerText="Check";
-        // div.append(h3,input,butinput);
-        // if(data.Status==="Error"){
-        //     return false;
-        // }else{
-        //     p0=document.createElement("p");
-        //         p0.innerText="Please enter valid pincode";
-        //         p0.style.color="red";
-        //     console.log(data.PostOffice[0])
-        // }
-        
     }
-    
-    
-
 
 }
 append(data);
+
+let append2=(data)=>{
+    let div=document.getElementById("middel");
+    console.log(data)
+    let div0=document.createElement("div");
+
+    let img=document.createElement("img");
+    img.src=data.image_link;
+
+    
+    
+    let h4=document.createElement("h4");
+    h4.innerText=data.description;
+
+    div.append(img,h4)
+}
+append2(data)
+
+// 
+
+
+// 
+
 
