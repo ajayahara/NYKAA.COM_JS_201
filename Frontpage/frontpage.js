@@ -109,22 +109,38 @@ under_carousel.append(img,img2);
 // ];
 var top_brand=document.querySelector("#top_brands");
 var timg1=document.createElement("img");
-timg1.src="https://images-static.nykaa.com/uploads/9873b1ac-79bb-4bc8-b583-2149b26212a0.gif?tr=w-600,cm-pad_resize"
+timg1.src="https://images-static.nykaa.com/uploads/80fcb1b8-adf0-4824-9671-1657354fdd87.gif?tr=w-600,cm-pad_resize"
 
 var timg2=document.createElement("img");
 timg2.src="https://images-static.nykaa.com/uploads/e8ad4321-dd30-4759-b2f3-f3518a8458df.gif?tr=w-600,cm-pad_resize"
 
 var timg3=document.createElement("img");
-timg3.src="https://images-static.nykaa.com/uploads/a95e57f6-41c8-445a-bc90-bb22d2f0aa36.jpg?tr=w-600,cm-pad_resize"
+timg3.src="https://images-static.nykaa.com/uploads/4c447fa5-0de0-4c69-a138-177321485adf.gif?tr=w-600,cm-pad_resize"
 
 var timg4=document.createElement("img");
-timg4.src="https://images-static.nykaa.com/uploads/5812bae0-47d5-4e14-81ad-b1e9bc96f50c.jpg?tr=w-600,cm-pad_resize"
+timg4.src="https://images-static.nykaa.com/uploads/057029d9-53f1-4774-9883-260f01cd8f3d.gif?tr=w-600,cm-pad_resize"
 
 var timg5=document.createElement("img");
-timg5.src="https://images-static.nykaa.com/uploads/80fcb1b8-adf0-4824-9671-1657354fdd87.gif?tr=w-600,cm-pad_resize"
+timg5.src="https://images-static.nykaa.com/uploads/fbc5e703-508d-457b-8bd3-c19be30211cc.gif?tr=w-600,cm-pad_resize"
 
 var timg6=document.createElement("img");
-timg6.src="https://images-static.nykaa.com/uploads/d5a17961-7f5b-4f9d-8e25-16053b8b2a5c.jpg?tr=w-600,cm-pad_resize"
+timg6.src="https://images-static.nykaa.com/uploads/db316f35-4e1f-49a2-942e-c730599ff776.gif?tr=w-600,cm-pad_resize"
 top_brand.append(timg1,timg2,timg3,timg4,timg5,timg6);
 
+var ed_img=document.createElement("img");
+ed_img.src="https://images-static.nykaa.com/uploads/3df85e95-5d80-46b7-a8fb-75fd485c35ba.jpg?tr=w-1200,cm-pad_resize";
+document.querySelector("#editor_choice_2").append(ed_img);
 
+
+///////////////////////////////////
+
+// right_key=document.getElementById("left");
+// left_key =document.getElementById("right");
+// sliderprodto=document.getElementById("carousel_2")
+
+// right_key.onclick=function(){
+//    sliderprodto.style.transform="translateX(-50%)";
+// }
+// left_key.onclick=function(){
+//     sliderprodto.style.transform="translateX(0.4%)"
+// }

@@ -29,7 +29,7 @@ body{
     border-radius: 7px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-#under_carousel+h2{
+h2{
     font-size: 24px;
     font-weight: 400;
     color: #3f414d;
@@ -51,3 +51,178 @@ body{
 #top_brands>img:nth-child(even){
     margin-left:18px;
 }
+.pink{
+    color: #fc2779;
+    font-size: 21px;
+    /* margin-top: 15px; */
+}
+.black{
+    color: #3f414d;
+    font-size: 18px;
+    margin-top:-25px
+}
+.top_brands_innerDiv{
+    background-color: white;
+    width: 36%;
+    height: 85px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.top_brands_innerDiv:hover{
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#tb_div1{
+    position: relative;
+    left: 11.5%;
+    margin-top: -813px;
+}
+#tb_div2{
+    position: relative;
+    left: 51.5%;
+    margin-top: -106px;
+}
+#tb_div3{
+    position: relative;
+    left: 11.5%;
+    margin-top: 267px;
+}
+#tb_div4{
+    position: relative;
+    left: 51.5%;
+    margin-top: -105px;
+}
+#tb_div5{
+    position: relative;
+    left: 11.5%;
+    margin-top:267px;
+}
+#tb_div6{
+    position: relative;
+    left: 51.5%;
+    margin-top: -105px;
+}
+.featured_brands{
+    display:grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    gap: 35px;
+    justify-content: center;
+    text-align:center;
+}
+.featured_brands>div{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 22%);
+    /* width: 300px; */
+    height: 330px;
+}
+.featured_brands>div:hover{
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#featured_brands{
+    margin-top: 20px;
+    grid-template-columns: 278px 278px 278px;
+}
+.featured_brands>div>img{
+    width: 100%;
+    border-radius: 5px;
+}
+.pink2{
+    color: #fc2779;
+    font-size: 18px;
+    margin-top: -5px;
+}
+.black{
+    color: #3f414d;
+    font-size: 17px;
+    margin-top:-25px
+}
+#mid-section-1{
+    margin-top: 30px;
+    margin-left: 12%;
+}
+#mid-section-1>img{
+    width: 43.3%;
+    border-radius: 5px;
+    margin-top:18px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 22%);
+}
+#mid-section-1-div{
+    display:flex;
+}
+#mid-section-1-div>div{
+    width:36%;
+    height: 90px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 22%);
+}
+#mid-section-1-div>div:nth-child(1){
+    position:relative;
+    left:13%;
+    top:-94px;
+}
+#mid-section-1-div>div:nth-child(2){
+    position:relative;
+    left:15.5%;
+    top:-94px;
+}
+#mid-section-1>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#mid-section-1-div>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#editor_choice{
+    display:grid;
+    grid-template-columns: 275px 275px 275px 275px;
+    gap: 20px;
+    justify-content: center;
+    text-align:center;
+}
+#editor_choice>div{
+    border-radius: 5px;
+}
+#editor_choice>div>img{
+    border-radius: 5px;
+    width: 98%;
+}
+#editor_choice>div>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#editor_choice_2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#editor_choice_2>img{
+    border-radius:5px;
+    width: 76.5%;
+}#editor_choice_2>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#popup_story_1{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#popup_story_1>img{
+    width: 38%;
+    border-radius: 5px;
+}
+#popup_story_1>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+/* /////////////////////////////////////////////////////// */
