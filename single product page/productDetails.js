@@ -69,7 +69,7 @@ let append=(data)=>{
 
     // all about product price;
     let MRP=document.createElement("h2");
-        MRP.innerText=`MRP:$${data.price}`;
+        MRP.innerText=`MRP:₹${data.price}`;
 
     let p3=document.createElement("p");
     p3.innerText=`inclusive of all taxes`;
@@ -140,50 +140,111 @@ let append=(data)=>{
     let butinput=document.createElement("button")
     butinput.innerText="Check";
    
+    // checkfor address
     butinput.addEventListener("click",function(){
         let query=document.getElementById("Pincode").value;
         addaddress(query)
     })
+    
+  
     div51.append(h3,input,butinput)
 
     div5.append(div50,div51);
     
-    // fetch data from pincode
-
-    let addaddress=(query)=>{
-       let url=`https://api.postalpincode.in/pincode/${query}`;
-       fetch(url)
-       .then((res)=>{
-           return res.json();
-       })
-       .then((res)=>{
-        console.log(res[0])
-        append2(res[0]);
-       })
-       .catch((err)=>{
-        console.log(err)
-       })
-
-    }
-
+    
+     // fetch data from pincode
+     let addaddress=(query)=>{
+        let url=`https://api.postalpincode.in/pincode/${query}`;
+        fetch(url)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
+         console.log(res[0])
+         append2(res[0]);
+        })
+        .catch((err)=>{
+         console.log(err)
+        })
+ 
+     }
+   
     
 
     div20.append(ratingimg,rating,p1,ratings,p2,p)
     div2.append(name,div20,MRP,p3,div3,shade,div4,div5)
+
+    let append2=(data)=>{
+        console.log(data)
+
+        if(data.Status==="Error" || data.Status==="404"){
+            let div=document.getElementById("addressdiv");
+            div.innerHTML=null;
+            let h3=document.createElement("h3");
+            h3.innerText="#@ Delivery Options"
+            input=document.createElement("input");
+            input.setAttribute("placeholder","Enter Pincode")
+            input.setAttribute("id","Pincode")
+            let butinput=document.createElement("button")
+            butinput.innerText="Check";
+            butinput.addEventListener("click",function(){
+                let query=document.getElementById("Pincode").value;
+                addaddress(query)
+            })
+           
+            let p=document.createElement("p");
+    
+            p.innerText="Please enter valid pincode";
+            p.style.color="red"
+            div.append(h3,input,butinput,p)
+    
+        }else{
+            let div=document.getElementById("addressdiv");
+            div.innerHTML=null;
+            let p=document.createElement("p");
+    
+            p.innerText=`Pincode:${data.PostOffice[0].Pincode}`;
+            p.style.color="red"
+            let h3=document.createElement("h4");
+            h3.innerText=`Shipping to: ${data.PostOffice[0].Block},${data.PostOffice[0].Country}`
+            let p1=document.createElement("p");
+            p1.innerText="* Delivered within 5 day of order "
+            let p2=document.createElement("p");
+            p2.innerText="* Cash on Delivery available on orders above ₹499 "
+            let butinput=document.createElement("button")
+           
+           
+            
+            div.append(p,h3,p1,p2)
+
+        }
+        
+     
+    
+        // let div=document.getElementById("addressdiv");
+        // div.innerHTML=null;
+        // let h3=document.createElement("h3");
+        // h3.innerText="#@ Delivery Options"
+        // input=document.createElement("input");
+        // input.setAttribute("placeholder","Enter Pincode")
+        // input.setAttribute("id","Pincode")
+        // let butinput=document.createElement("button")
+        // butinput.innerText="Check";
+        // div.append(h3,input,butinput);
+        // if(data.Status==="Error"){
+        //     return false;
+        // }else{
+        //     p0=document.createElement("p");
+        //         p0.innerText="Please enter valid pincode";
+        //         p0.style.color="red";
+        //     console.log(data.PostOffice[0])
+        // }
+        
+    }
+    
     
 
 
 }
 append(data);
 
-let append2=(data)=>{
-    // if(data.Status==="Error"){
-    //     return false;
-    // }else{
-    //     p0=document.createElement("p");
-    //         p0.innerText="Please enter valid pincode";
-    //         p0.style.color="red";
-    //     console.log(data.PostOffice[0])
-    // }
-    
-}

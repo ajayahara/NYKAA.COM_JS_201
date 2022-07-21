@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>productDetails</title>
     <style>
+      body {
+        background-color: #f3f3f3;
+        display: grid;
+
+        align-items: center;
+        justify-content: center;
+      }
       * {
         margin: 0px;
         padding: 0px;
       }
       #main {
-        border: 1px solid black;
         height: 600px;
         box-sizing: border-box;
         display: flex;
-        max-width: 1280px;
+        width: 1280px;
+        /* max-width: 1280px; */
         justify-self: center;
-        padding: 50px 100px 0px 100px;
+        padding: 50px 70px 0px 70px;
+
+        background-color: #f3f3f3;
       }
       #basicDetail {
-        border: 2px solid red;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: white;
+
         width: 40%;
         padding-top: 30px;
       }
       .imgdiv {
-        border: 2px solid red;
         height: 80%;
         display: flex;
       }
@@ -42,7 +52,6 @@
         line-height: 20px;
       }
       #inner1 {
-        border: 1px solid green;
         width: 20%;
         padding-top: 20px;
         display: grid;
@@ -80,10 +89,15 @@
         height: 100%;
       }
       #fullDetail {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        background-color: white;
         padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
         display: block;
         gap: 10px;
-        border: 2px solid greenyellow;
+        border-left: 1px solid #dde1e4;
         width: 60%;
       }
       #inner2 {
@@ -112,6 +126,8 @@
       .offersdiv {
         margin-top: 10px;
         margin-bottom: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
         background-color: #eceef0;
         padding: 10px;
       }
@@ -119,7 +135,7 @@
         margin-top: 10px;
         display: flex;
         width: 100%;
-        border: 1px solid blue;
+
         height: 20%;
         gap: 20px;
       }
@@ -128,6 +144,7 @@
       }
       .shades > div:nth-child(2) {
         align-items: center;
+        border: 1px solid #dde1e4;
         display: grid;
         width: 100%;
         grid-template-columns: repeat(6, 1fr);
@@ -143,7 +160,8 @@
 
       .addBagdiv {
         height: 30%;
-        border: 1px solid blue;
+        margin-top: 10px;
+
         display: flex;
         align-items: center;
         justify-items: center;
@@ -155,36 +173,43 @@
       }
       .addBagdiv > div:nth-child(1) > button {
         width: 85%;
-
+        font-size: 16px;
+        font-weight: 600;
         padding: 15px 40px 15px 40px;
         color: white;
 
         background-color: #fc2779;
         cursor: pointer;
         border: none;
-        font-size: 20px;
       }
       .addBagdiv > div:nth-child(2) {
         width: 55%;
         padding-left: 5%;
 
         border-left: 1px solid black;
+
         padding: auto 10px auto 10px;
       }
       .addBagdiv > div:nth-child(2) > input {
         margin-top: 10px;
-        border: 2px solid #dde1e4;
+        border: 1.5px solid #dde1e4;
         border-right: none;
         padding: 10px;
       }
       .addBagdiv > div:nth-child(2) > button {
         margin-top: 10px;
-        border: 2px solid #dde1e4;
+        border: 1.5px solid #dde1e4;
         border-left: none;
         background-color: white;
         color: #fc2779;
         font-weight: 600;
         padding: 10px;
+      }
+      #middel {
+        width: 1280px;
+        margin-top: 0%;
+        height: 500px;
+        border: 2px solid green;
       }
     </style>
   </head>
@@ -228,6 +253,7 @@
       </div>
       <div id="fullDetail"></div>
     </div>
+    <div id="middel"></div>
   </body>
 </html>
 <script src="./productDetails.js"></script>
