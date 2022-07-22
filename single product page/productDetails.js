@@ -1,16 +1,16 @@
 
 
-let url="https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=mascara"
-fetch(url)
-.then((res)=>{
-    return res.json()
-})
-.then((res)=>{
-    console.log(res.length)
-    localStorage.setItem("nykaa",JSON.stringify(res[3]))
-})
-.catch((err)=>{
-})
+// let url1="http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=eyeliner"
+// fetch(url1)
+// .then((res)=>{
+//     return res.json()
+// })
+// .then((res)=>{
+//     console.log(res.length)
+//     
+// })
+// .catch((err)=>{
+// })
 
 let data = JSON.parse(localStorage.getItem("nykaa"))||[];
 console.log(data)
@@ -256,7 +256,70 @@ let append2=(data)=>{
 }
 append2(data)
 
-// 
+// recomended products
+let url=`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${data.brand}`
+fetch(url)
+.then((res)=>{
+    return res.json()
+})
+.then((res)=>{
+    console.log(res)
+    append3(res);
+    
+})
+.catch((err)=>{
+    console.log(err)
+})
+
+let append3=(data)=>{
+    let div=document.getElementById("recomended");
+    // div.innerHTML=null;
+    console.log(div)
+   
+    
+   
+    data.forEach(el=>{
+        
+        
+        let div0=document.createElement("div");
+        let img=document.createElement('img');
+        img.src=el.image_link
+        
+        let name=document.createElement("p");
+         name.innerText=el.name
+
+         let button=document.createElement("button");
+         button.setAttribute("class","recdivbut")
+         button.innerText="View Details"
+
+         let mrp=document.createElement("h4");
+         mrp.innerText=`MRP:₹${el.price}`
+
+         button.addEventListener("click",function(){
+            addtobag(el);
+
+         
+         })
+         
+        div0.append(img,name,mrp,button);
+        div.append(div0)
+         
+          
+    })
+
+    
+    let addtobag=(data)=>{
+    
+       localStorage.setItem("nykaa",JSON.stringify(data))
+       window.location.reload();
+   
+
+    }
+    
+}
+
+
+
 
 
 // 

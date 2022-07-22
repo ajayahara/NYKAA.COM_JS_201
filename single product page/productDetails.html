@@ -17,7 +17,7 @@
         padding: 0px;
       }
       #main {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         height: 600px;
         box-sizing: border-box;
         display: flex;
@@ -92,14 +92,25 @@
       #fullDetail {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-        background-color: white;
+        /* background-color: white; */
         padding-top: 15px;
         padding-left: 20px;
         padding-right: 20px;
+        /* display: block;
+        gap: 10px;
+        border-left: 1px solid #dde1e4; */
+        /* width: 60%; */
+        height: 87%;
+      }
+      #second {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        background-color: white;
+
         display: block;
         gap: 10px;
         border-left: 1px solid #dde1e4;
-        width: 60%;
+        /* width: 60%; */
       }
       #inner2 {
         display: grid;
@@ -183,6 +194,9 @@
         cursor: pointer;
         border: none;
       }
+      .addBagdiv > div:nth-child(1) > button:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
       .addBagdiv > div:nth-child(2) {
         width: 55%;
         padding-left: 5%;
@@ -203,16 +217,18 @@
         border-left: none;
         background-color: white;
         color: #fc2779;
+        cursor: pointer;
         font-weight: 600;
         padding: 10px;
       }
+
       #middel {
         width: 1280px;
         margin-top: 0%;
         height: 500px;
-        border: 2px solid green;
+        /* border: 2px solid green; */
       }
-      #discript {
+      .discript {
         margin-left: 10%;
         position: relative;
         color: rgb(0, 19, 37);
@@ -247,6 +263,83 @@
         width: 50%;
         height: 100%;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .recdivbut {
+        margin-top: 10px;
+        width: 70%;
+        border: 1.5px solid #dde1e4;
+        border-left: none;
+        cursor: pointer;
+        background-color: #fc2779;
+        color: white;
+        font-weight: 600;
+        padding: 10px;
+      }
+      #recomended > div:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .recdivbut:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #bottom {
+        width: 1280px;
+        margin-top: 0%;
+        /* height: 500px; */
+        /* border: 2px solid green; */
+        box-sizing: border-box;
+        width: 1280px;
+        justify-self: center;
+
+        padding: 0px 70px 0px 70px;
+      }
+      #recomended {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+      }
+      #recomended > div {
+        width: 90%;
+        height: 400px;
+        display: grid;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 5px 8px 7px 8px;
+        justify-items: center;
+        align-items: center;
+      }
+      #recomended > div > img {
+        width: 100%;
+        height: 70%;
+      }
+      #about {
+        border: 1px solid #dde1e4;
+        height: 10%;
+        display: flex;
+        background-color: #f3f3f3;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-evenly;
+        justify-items: center;
+        gap: 20px;
+        align-items: center;
+      }
+      #about > div {
+        display: flex;
+        font-family: Inter, Roboto, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 5px;
+      }
+      .imges {
+        width: 20px;
+        height: 100%;
       }
     </style>
   </head>
@@ -288,10 +381,39 @@
           <div id="inner2"></div>
         </div>
       </div>
-      <div id="fullDetail"></div>
+      <div id="second">
+        <div id="fullDetail"></div>
+        <div id="about">
+          <div>
+            <img
+              class="imges"
+              src="https://mpng.subpng.com/20191002/vww/transparent-makeup-icon-cosmetics-icon-lifestyle-icons-icon-5d9435278718c9.3848466615699940235534.jpg"
+              alt=""
+            />
+            <p>100% Genuine Products</p>
+          </div>
+
+          <div>
+            <img
+              class="imges"
+              src="https://e7.pngegg.com/pngimages/303/214/png-clipart-computer-icons-undo-symbol-update-button-miscellaneous-trademark.png"
+              alt=""
+            />
+            <p>Easy Return Policy</p>
+          </div>
+          <div>
+            <p>Sold by :NYKAA E RETAI...</p>
+          </div>
+        </div>
+        <div></div>
+      </div>
     </div>
-    <h1 id="discript">product Description</h1>
+    <h1 class="discript">product Description</h1>
     <div id="middel"></div>
+    <h1 class="discript">Customers also Viewed</h1>
+    <div id="bottom">
+      <div id="recomended"></div>
+    </div>
   </body>
 </html>
 <script src="./productDetails.js"></script>
