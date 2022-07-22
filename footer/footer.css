@@ -26,6 +26,8 @@
 i{
     height: 30px;
     width: 50px;
+    margin-left: 5%;
+    margin-top:-1%;
 }
 
 #box1 {
@@ -242,9 +244,9 @@ p {
     font-family: 'Karla', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-#img1 img>a{
-    height: 15%;
-    width: 15%;
+#img1 img{
+    height: 25%;
+    width: 25%;
     /* border: 1px solid red; */
     margin-top: -50%;
     margin-left: 15px;
