@@ -241,16 +241,18 @@ let append2=(data)=>{
     let div=document.getElementById("middel");
     console.log(data)
     let div0=document.createElement("div");
-
+    let name=document.createElement("h3");
+     name.innerText=`BRANDNAME: ${data.brand}`
     let img=document.createElement("img");
     img.src=data.image_link;
-
+   
     
     
     let h4=document.createElement("h4");
-    h4.innerText=data.description;
+    h4.innerText=`DESCRIPTION: ${data.description}`;
+    div0.append(name,h4)
 
-    div.append(img,h4)
+    div.append(img,div0)
 }
 append2(data)
 
