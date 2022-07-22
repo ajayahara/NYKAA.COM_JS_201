@@ -1,0 +1,333 @@
+body {
+  background-color: #f3f3f3;
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#main {
+  /* border: 1px solid green; */
+  height: 600px;
+  box-sizing: border-box;
+  display: flex;
+  width: 1280px;
+  /* max-width: 1280px; */
+  justify-self: center;
+  padding: 50px 70px 0px 70px;
+
+  background-color: #f3f3f3;
+}
+#basicDetail {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+
+  width: 40%;
+  padding-top: 30px;
+}
+.imgdiv {
+  height: 80%;
+  display: flex;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 24px;
+  margin: 0;
+  color: #001325;
+  font-family: Inter, Roboto, Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#inner1 {
+  width: 20%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 20%);
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+#inner1 > div {
+  height: 50px;
+  width: 65%;
+  margin-bottom: 16px;
+
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c1c9cf;
+}
+#inner1 > div:first-child {
+  border-color: #e29999;
+}
+#inner1 > div:hover {
+  border-color: #e29999;
+}
+.imginner {
+  width: 100%;
+  height: 100%;
+}
+#inn1img1 > img {
+  width: 100%;
+  height: 100%;
+}
+#fullDetail {
+  /* background-color: white; */
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* display: block;
+    gap: 10px;
+    border-left: 1px solid #dde1e4; */
+  /* width: 60%; */
+  height: 87%;
+}
+#second {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  background-color: white;
+
+  display: block;
+  /* gap: 10px; */
+  border-left: 1px solid #dde1e4;
+  width: 60%;
+}
+#inner2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+#inner2 > img {
+  width: 100%;
+  height: 80%;
+}
+.div20 {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.div20 > img {
+  width: 20%;
+  height: 50px;
+}
+.offersdiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  background-color: #eceef0;
+  padding: 10px;
+}
+.shades {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+
+  height: 20%;
+  gap: 20px;
+}
+.shades > div:nth-child(1) {
+  width: 20%;
+}
+.shades > div:nth-child(2) {
+  align-items: center;
+  border: 1px solid #dde1e4;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto, 30px);
+  gap: 10px;
+  padding: 0px 10px 0px 10px;
+}
+.colordiv {
+  cursor: pointer;
+  width: 70%;
+  height: 45px;
+}
+
+.addBagdiv {
+  height: 30%;
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.addBagdiv > div:nth-child(1) {
+  display: grid;
+  justify-items: center;
+  width: 45%;
+}
+.addBagdiv > div:nth-child(1) > button {
+  width: 85%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 40px 15px 40px;
+  color: white;
+
+  background-color: #fc2779;
+  cursor: pointer;
+  border: none;
+}
+.addBagdiv > div:nth-child(1) > button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.addBagdiv > div:nth-child(2) {
+  width: 55%;
+  padding-left: 5%;
+
+  border-left: 1px solid black;
+
+  padding: auto 10px auto 10px;
+}
+.addBagdiv > div:nth-child(2) > input {
+  margin-top: 10px;
+  border: 1.5px solid #dde1e4;
+  border-right: none;
+  padding: 10px;
+}
+.addBagdiv > div:nth-child(2) > button {
+  margin-top: 10px;
+  border: 1.5px solid #dde1e4;
+  border-left: none;
+  background-color: white;
+  color: #fc2779;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px;
+}
+
+#middel {
+  width: 1280px;
+  margin-top: 0%;
+  height: 500px;
+  /* border: 2px solid green; */
+}
+.discript {
+  margin-left: 10%;
+  position: relative;
+  color: rgb(0, 19, 37);
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter, Roboto, Arial, sans-serif;
+}
+#middel {
+  box-sizing: border-box;
+  width: 1280px;
+  justify-self: center;
+  display: flex;
+  height: 400px;
+  padding: 0px 70px 0px 70px;
+}
+#middel > div:nth-child(2) {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 20px;
+  line-height: 30px;
+  color: #475562;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: Inter, Roboto, Arial, sans-serif;
+  /* display: grid; */
+  /* padding: 30px; */
+}
+#middel > img {
+  width: 50%;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.recdivbut {
+  margin-top: 10px;
+  width: 70%;
+  border: 1.5px solid #dde1e4;
+  border-left: none;
+  cursor: pointer;
+  background-color: #fc2779;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+}
+#recomended > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.recdivbut:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#bottom {
+  width: 1280px;
+  margin-top: 0%;
+  /* height: 500px; */
+  /* border: 2px solid green; */
+  box-sizing: border-box;
+  width: 1280px;
+  justify-self: center;
+
+  padding: 0px 70px 0px 70px;
+}
+#recomended {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+#recomended > div {
+  width: 90%;
+  height: 400px;
+  display: grid;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 5px 8px 7px 8px;
+  justify-items: center;
+  align-items: center;
+}
+#recomended > div > img {
+  width: 100%;
+  height: 70%;
+}
+#about {
+  border: 1px solid #dde1e4;
+  height: 10%;
+  display: flex;
+  background-color: #f3f3f3;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-evenly;
+  justify-items: center;
+  gap: 20px;
+  align-items: center;
+}
+#about > div {
+  display: flex;
+  font-family: Inter, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 5px;
+}
+.imges {
+  width: 20px;
+  height: 100%;
+}
