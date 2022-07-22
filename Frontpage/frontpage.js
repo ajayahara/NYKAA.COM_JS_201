@@ -112,7 +112,7 @@ var timg1=document.createElement("img");
 timg1.src="https://images-static.nykaa.com/uploads/80fcb1b8-adf0-4824-9671-1657354fdd87.gif?tr=w-600,cm-pad_resize"
 
 var timg2=document.createElement("img");
-timg2.src="https://images-static.nykaa.com/uploads/e8ad4321-dd30-4759-b2f3-f3518a8458df.gif?tr=w-600,cm-pad_resize"
+timg2.src="https://images-static.nykaa.com/uploads/45e77657-2fba-49f1-b077-437dc02b978c.gif?tr=w-600,cm-pad_resize"
 
 var timg3=document.createElement("img");
 timg3.src="https://images-static.nykaa.com/uploads/4c447fa5-0de0-4c69-a138-177321485adf.gif?tr=w-600,cm-pad_resize"
