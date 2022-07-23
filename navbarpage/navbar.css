@@ -3,11 +3,57 @@
   margin: 0;
   box-sizing: border-box;
 }
+#nav{
+  height:5%;
+  width: auto;
+  border: 1px solid rgb(252, 247, 247);
+  justify-content: center;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color:rgb(248, 134, 178);
+}
+#nav #p{
+  font-size: 20px;
+  margin-left: 8%;
+  margin-top: 1%;
+  
+  font-weight: bold;
+  color:rgb(15, 15, 15);
+  justify-content: center;
+}
+#navi:hover{
+  margin: auto;
+  color: pink;
+}
+#pp:hover{
+  margin: auto;
+  color: pink;
+}
+ #pp{
+  font-size: 18px;
+  /* margin-left: 50%;
+  margin-top: -30%;
+  display: flex; */
+  
+}
+#nav1  {
+  display:flex;
+  height: 100%;
+  width: 40%;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* border: 1px solid black; */
+  margin-left: 60%;
+  gap:50px;
+  margin-top: -2%;
+  font-size: 25px;
+  background-color:rgb(248, 134, 178);
+}
 
 #navbar{
-  margin-top: 3%;
+  /* margin-top: 3%; */
   height: 80px;
-  width: 100%;
+  width: auto;
   display: flex;
   /* border: 1px solid black; */
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -59,6 +105,7 @@
   gap:50px;
   margin-top: 1%;
   margin-left: 0%;
+  transition: 0.25s ease-in-out;
 } 
 
 #sidebar #side li a{
@@ -72,6 +119,7 @@
 #makeup0  {
   list-style-type: none;
   display: none;
+  transition: 0.25 ease-in-out;
   
 }
 #sidebar ul li:hover #makeup0{
@@ -79,13 +127,13 @@
   position: absolute;
   margin-top:2%;
   width: 85%;
-  height:80%;
+  height:auto;
   display: flex;
   background-color: white;
   /* border: 1px solid rebeccapurple; */
   justify-content: left;
   margin-left:-17%;
-  
+  transition: 0.25 ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
@@ -94,14 +142,14 @@
   display: block;
   /* position: absolute; */
   /* margin-top:3%; */
-  width: 40%;
-  height: 100%;
+  width: 30%;
+  height: auto;
   gap:10%;
   /* border: 1px solid red; */
   justify-content: right;
   line-height:2em;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  
+  transition: 0.25 ease-in-out;
 }
 #sidebar ul li:hover #makeup0 #makeup10 #boxx{
   display: block;
@@ -112,11 +160,11 @@
   margin-left: 10%;
   line-height:2em;
   border:none;
-  
+  transition: 0.25 ease-in-out;
   
 }
 #sidebar ul li:hover #makeup0 #makeup11 #boxx1 #bag{
-  
+  transition: 0.25 ease-in-out;
   width: 80%;
   height: 60px;
   margin: auto;
@@ -141,12 +189,14 @@
   font-size: 18px;
   border-radius: 2px;
   border: 1px solid white;
+  transition: 0.25 ease-in-out;
 }
 #sidebar ul li:hover #makeup0 #makeup11 #boxx1 #bag #btn0{
   width: 20%;
   height: 100%;
   margin:auto;
   gap:50px;
+  transition: 0.25 ease-in-out;
   background-color: rgb(172, 169, 169);
   justify-content: center;
   margin-left: 3%;
@@ -182,21 +232,21 @@
 }
 #sidebar ul li:hover #makeup0 #makeup11{
   display: block;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   gap:10%;
-
+  transition: 0.25 ease-in-out;
   justify-content: right;
   line-height:2em;
   background-color: rgb(247, 245, 245);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  transition: 0.25 ease-in-out;
 }
 
 #navbar1 ul li:hover #makeup #makeup1 h4{
   color:black;
   margin-top: 20%;
-  
+  transition: 0.25 ease-in-out;
   
 }
 #navbar ul li:hover #brand{
@@ -206,6 +256,7 @@
   width: 70%;
   height: 50%;
   display: flex;
+  transition: 0.25 ease-in-out;
 }
 #sidebar a:hover{
   color: rgb(252, 105, 127);
@@ -311,9 +362,11 @@ hr{
 #navbar1{
   /* margin-top: 3%; */
   height: 55px;
-  width: 100%;
+  width: auto;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   text-align: center;
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid red; */
 }
 #navbar1 #page{
   display: inline-flex;
@@ -321,6 +374,7 @@ hr{
   gap:47px;
   margin-top: 1%;
   margin-left: -10%;
+  transition: 0.25 ease-in-out;
 }
 
 #navbar1 #page li a{
@@ -332,15 +386,15 @@ hr{
 }
 
 
-#navbar1 #offer{
+#navbar1 #offer {
   height: 50%;
   width: 7%;
-   border: 1px solid red; 
+   /* border: 1px solid red;  */
   background-image: linear-gradient(to right, rgb(250, 119, 163), rgb(235, 25, 172), rgb(243, 9, 173));
   margin-left: 85%;
   margin-top:-1.4%;
 }
-#offer p{
+#offer p {
   font-size: 15px;
   color: white;
   font-weight: bold;
@@ -353,6 +407,7 @@ hr{
   #makeup  {
   list-style-type: none;
   display: none;
+  transition: 0.25 ease-in-out;
 }
 /* #makeup li a:hover{
   background-color: blueviolet;
@@ -362,9 +417,11 @@ hr{
   position: absolute;
   margin-top:1.1%;
   width: 70%;
-  height: 50%;
+  height: 73%;
   display: flex;
   /* gap:20%; */
+
+  transition: 0.25 ease-in-out;
   /* border: 1px solid rebeccapurple; */
   justify-content: left;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -378,20 +435,357 @@ hr{
   /* position: absolute; */
   margin-top:-1%;
   width: 20%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  transition: 0.25 ease-in-out;
+}
+
+#navbar1 ul li:hover #makeup #makeup1 h4{
+  color:rgb(10, 10, 10);
+  
+}
+#navbar1 ul li:hover #makeup #makeup1 h3{
+  color:rgb(10, 10, 10);
+  
+}
+
+
+#make  {
+  list-style-type: none;
+  display: none;
+  transition: 0.25 ease-in-out;
+  background-color: white;
+}
+#sidebar ul li:hover #make{
+  display: block;
+  position: absolute;
+  margin-top:3%;
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin-left: -23%;
+  /* gap:20%; */
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid rebeccapurple; */
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* #page li:nth-child(2):hover #makeup{
+  display:block;
+} */
+#sidebar ul li:hover #make #make1{
+  display: block;
+  /* position: absolute; */
+  margin-top:3%;
+  transition: 0.25 ease-in-out;
+  width: 20%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: white;
+}
+#sidebar ul li:hover #make #make2{
+  display: block;
+  /* position: absolute; */
+  margin-top:2%;
+  transition: 0.25 ease-in-out;
+  width: 20%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: rgb(245, 241, 241);
+}
+#sidebar ul li:hover #make #make1 h3{
+  color: rgb(250, 8, 121);
+  font-weight: bold;
+}
+#sidebar ul li:hover #make #make2 h3{
+  color: rgb(252, 105, 127);
+  font-weight: bold;
+}
+#sidebar ul li:hover #make #make1 h4{
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+}
+#sidebar ul li:hover #make #make2 h{
+  color: rgb(247, 7, 87);
+  font-weight: bold;
+}
+
+
+
+
+#makee  {
+  list-style-type: none;
+  display: none;
+  transition: 0.25 ease-in-out;
+  background-color: white;
+  transition: 0.25 ease-in-out;
+}
+#sidebar ul li:hover #makee{
+  display: block;
+  position: absolute;
+  margin-top:3%;
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin-left: -28%;
+  /* gap:20%; */
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid rebeccapurple; */
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* #page li:nth-child(2):hover #makeup{
+  display:block;
+} */
+#sidebar ul li:hover #makee #makee1{
+  display: block;
+  /* position: absolute; */
+  margin-top:3%;
+  width: 23%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: white;
+  transition: 0.25 ease-in-out;
+}
+
+#sidebar ul li:hover #makee #makee2{
+  display: block;
+  /* position: absolute; */
+  transition: 0.25 ease-in-out;
+  margin-top:2%;
+  width: 23%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: rgb(245, 241, 241);
+}
+#sidebar ul li:hover #makee #makee3{
+  display: block;
+  /* position: absolute; */
+  margin-top:3%;
+  width: 45%;
   height: 100%;
   gap:10%;
   justify-content: right;
   line-height:2em;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  
+  background-color: white;
+}
+#sidebar ul li:hover #makee #makee1 h4{
+  color: rgb(252, 105, 127);
+  font-weight: bold;
+}
+#sidebar ul li:hover #makee #makee2 h4{
+  color: rgb(252, 105, 127);
+  font-weight: bold;
+}
+#sidebar ul li:hover #makee #makee1 h3{
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+}
+#sidebar ul li:hover #makee #makee2 h3{
+  color: rgb(8, 8, 8);
+  font-weight: bold;
 }
 
-#navbar1 ul li:hover #makeup #makeup1 h4{
+#mm{
+  height: 75%;
+  width: 80%;;
+}
+
+
+
+#makeee  {
+  list-style-type: none;
+  display: none;
+  transition: 0.25 ease-in-out;
+  background-color: white;
+  transition: 0.25 ease-in-out;
+}
+#sidebar ul li:hover #makeee{
+  display: block;
+  position: absolute;
+  margin-top:2%;
+  width: 80%;
+  height: 45%;
+  display: flex;
+  margin-left: -37%;
+  transition: 0.25 ease-in-out;
+  display: flex;
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid rebeccapurple; */
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#sidebar ul li:hover #makeee #makeee1{
+  display: block;
+  transition: 0.25 ease-in-out;
+  margin-top:2%;
+  width: 30%;
+  height: auto;
+  /* border: 1px solid red; */
+  gap:40%;
+  margin-left: 3%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: white;
+}
+
+
+#sidebar ul li:hover #makeee #makeee1 h3{
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  margin-left: 15%;
+}
+#sidebar ul li:hover #makeee #makeee1 h4{
+  color: rgb(104, 101, 101);
+  margin-left: 15%;
+}
+
+#mmm{
+  height: 60%;
+  width: 80%;
+ border-radius: 5px;
+ margin-left: 15%;
+ border:rgb(252, 105, 127);;
+}
+
+
+#makeup5  {
+  list-style-type: none;
+  display: none;
+  transition: 0.25 ease-in-out;
+}
+/* #makeup li a:hover{
+  background-color: blueviolet;
+} */
+#navbar1 ul li:hover #makeup5{
+  display: block;
+  position: absolute;
+  margin-top:3%;
+  width: 70%;
+  height: auto;
+  display: flex;
+  /* gap:20%; */
+margin-left: -40%;
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid rebeccapurple; */
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#navbar1 ul li:hover #makeup5 #makeup6{
+  display: block;
+  /* position: absolute; */
+  margin-top:-1%;
+  width: 20%;
+  height:auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  transition: 0.25 ease-in-out;
+}
+
+#navbar1 ul li:hover #makeup5 #makeup6 h4{
+  color:black;
+}
+
+
+#makeup3  {
+  list-style-type: none;
+  display: none;
+  transition: 0.25 ease-in-out;
+}
+/* #makeup li a:hover{
+  background-color: blueviolet;
+} */
+#navbar1 ul li:hover #makeup3{
+  display: block;
+  position: absolute;
+  margin-top:3%;
+  width: 70%;
+  height: auto;
+  display: flex;
+  /* gap:20%; */
+margin-left: -60%;
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid rebeccapurple; */
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#navbar1 ul li:hover #makeup3 #makeup4{
+  display: block;
+  /* position: absolute; */
+  margin-top:-1%;
+  width: 20%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  transition: 0.25 ease-in-out;
+}
+
+#navbar1 ul li:hover #makeup3 #makeup4 h4{
   color:black;
   
 }
+#makeup8  {
+  list-style-type: none;
+  display: none;
+  transition: 0.25 ease-in-out;
+}
+/* #makeup li a:hover{
+  background-color: blueviolet;
+} */
+#navbar1 ul li:hover #makeup8{
+  display: block;
+  position: absolute;
+  margin-top:3%;
+  width: 70%;
+  height: auto;
+  display: flex;
+  /* gap:20%; */
+margin-left: -20%;
+  transition: 0.25 ease-in-out;
+  /* border: 1px solid rebeccapurple; */
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#navbar1 ul li:hover #makeup8 #makeup9{
+  display: block;
+  /* position: absolute; */
+  margin-top:-1%;
+  width: 60%;
+  height: auto;
+  gap:10%;
+  justify-content: right;
+  line-height:2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  transition: 0.25 ease-in-out;
+}
 
-
+#navbar1 ul li:hover #makeup8 #makeup9 h4{
+  color:black;
+  
+}
 
 
 
