@@ -31,7 +31,7 @@ async function getData(query){
 }
 function Append(data){
    let container=document.getElementById("item");
-
+   container.innerHTML=null
    data.forEach((el) => {
       let div=document.createElement("div")
       let div1=document.createElement("div");
