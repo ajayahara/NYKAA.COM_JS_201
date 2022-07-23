@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+#navbarbox{
+  height: auto;
+  width: auto;
+  /* border: 1px solid red; */
+}
 #nav{
   height:5%;
   width: auto;
@@ -59,7 +64,7 @@
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
  
- img{
+ #barimg{
   height: 45%;
   width: 6%;
   justify-content: center;
@@ -394,7 +399,7 @@ hr{
   margin-left: 85%;
   margin-top:-1.4%;
 }
-#offer p {
+#offer #p0 {
   font-size: 15px;
   color: white;
   font-weight: bold;

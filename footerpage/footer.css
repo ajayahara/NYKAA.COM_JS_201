@@ -1,4 +1,8 @@
-
+#footer{
+    height: auto;
+    width: auto;
+    /* border: 1px solid red; */
+}
  #footer_id {
     /* border: 1px solid red; */
     height: 900px;
@@ -22,28 +26,58 @@
     margin-top: 20%;
     margin-left: 100px;
     margin: auto;
+    display: flex;
 }
-i{
+#dh #h3{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 30%;
+    width:290px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+#box #i{
     height: 30px;
     width: 50px;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top:-1%;
+    /* border: 1px solid red; */
 }
 
 #box1 {
-    height: 80%;
+    height: 70%;
     width: 23%;
-    /* margin-top: 50px; */
+    /* border: 1px solid red; */
     margin-left: 20px;
     margin: auto;
+    gap:10%;
     /* display: flex; */
 }
+#dh1 #h3{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 30%;
+    width:280px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-left: 20%;
+    margin-top: -7%;
+}
+#box1 #i{
+    height: 30px;
+    width: 50px;
+    margin-left: 3%;
+    margin-top:3%;
+    /* border: 1px solid red; */
+}
 #main{
-    
-    height: 50%;
+    /* border: 1px solid pink; */
+    height: 60%;
     width: 100%;
     display: flex;
-    gap: 5%;
+    margin-top: 5%;
 }
 
 #play{
@@ -54,7 +88,7 @@ i{
     background-color: black;
     border-radius: 10px;
 }
-#play img{
+#play #img{
     height: 90%;
     width:90%;
     color:white;
@@ -71,11 +105,32 @@ i{
     border: 1px solid black;
     /* margin-left: 18%; */
 }
-#box2 i{
+#box2 #i{
     height: 30px;
     width: 50px;
     margin-left: 8%;
     margin-top: 1%;
+}
+#dh2 {
+    
+    /* border: 1px solid red; */
+    height: 60%;
+    width:310px;
+    /* margin-left: -5%; */
+    /* text-align: center; */
+    margin: auto;
+    margin-left: 20%;
+    margin-top: -7%;
+}
+#dh2 #h3{
+    margin-left: 5%;
+}
+#box2 #i{
+    height: 30px;
+    width: 50px;
+    margin-left: 12%;
+    margin-top:5%;
+    /* border: 1px solid red; */
 }
 #box2 {
 
@@ -90,9 +145,9 @@ i{
 
 
 
-h3 {
+#h3 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 15px;
     margin-left: 18%;
     font-family: 'Karla', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -102,24 +157,28 @@ h3 {
 
 }
 
-input {
+#box #input {
     text-decoration: none;
     background-color: rgb(68, 67, 67);
-    height: 42px;
-    width: 75%;
+    height: 45%;
+    width: 50%;
     border-color: white;
     color: white;
     font-size: 18px;
+    margin-top: 12%;
+    /* border: 1px solid red; */
+    margin-left: -77%;
 }
 
-button {
+#button {
+    margin-top: 12%;
     text-decoration: none;
     background-color: rgb(68, 67, 67);
     color: white;
-    height: 50px;
+    height: 55px;
     width: 20%;
     border-color: white;
-    margin-left: 2%;
+    margin-left: 4%;
     font-size: 20px;
 }
 
@@ -133,14 +192,14 @@ button {
     /* margin-top: 40%; */
 }
 
-h4 {
+#h4 {
     margin-top: 20%;
     font-style: italic;
     font-weight: bold;
     font-size: 28px;
 }
 
-h5 {
+#h5 {
     margin-top: 20%;
     font-weight: bold;
     font-size: 20px;
@@ -148,7 +207,7 @@ h5 {
     font-family: 'Roboto', sans-serif;
 }
 
-p {
+#p {
     font-size: 15px;
     font-family: 'Karla', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -237,14 +296,14 @@ p {
     /* margin-top: -28%; */
     margin: auto;
 }
-#b1>h6{
+#b1> #h6{
     font-size: 18px;
     color: rgb(73, 72, 72);
     margin-top:1%;
     font-family: 'Karla', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-#img1 img{
+#img1 #img{
     height: 25%;
     width: 25%;
     /* border: 1px solid red; */
