@@ -92,7 +92,7 @@ let append=(data)=>{
     div40.style.backgroundColor="#FE93BC";
     let div41=document.createElement("div");
     div4.append(div40)
-    if(data.product_colors.length===0){
+    if(data.product_colors.length===0 || data.product_colors.length>=15){
         shade.innerText=`No Shade Available`;
         div4.style.display="none"
     }else{
@@ -140,6 +140,7 @@ let append=(data)=>{
        Cartlist.push(data);
        console.log("Cartlist:",Cartlist) 
        localStorage.setItem("Cartlist",JSON.stringify(Cartlist))
+       alert("product added to cart")
 
     }
     
@@ -311,6 +312,7 @@ let append3=(data)=>{
     let addtobag=(data)=>{
     
        localStorage.setItem("nykaa",JSON.stringify(data))
+      
        window.location.reload();
    
 
