@@ -65,6 +65,11 @@
 }
 
 /* wishlisting and add tto cart */
+#item>div{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
 #item>div>div:last-child{
      display: flex;
 }
