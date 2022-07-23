@@ -1,0 +1,56 @@
+body {
+     background-color: #f3f3f3;
+}
+
+#firstb {
+     border: none;
+     background-color: #ffff;
+     font-family: serif;
+}
+
+#firstb:hover {
+     cursor: pointer;
+}
+
+#signup {
+     width: 375px;
+     height: 100vh;
+     margin: auto;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+     box-sizing: border-box;
+     padding: 25px;
+     margin-top: 25px;
+     border-radius: 10px;
+     background-color: #ffff;
+}
+
+#head {
+     display: flex;
+}
+
+#firstb+h2 {
+     margin-left: 35px;
+}
+
+#input {
+     width: 100%;
+     display: block;
+     font-size: 16px;
+     text-align: center;
+     padding: 10px;
+     box-sizing: border-box;
+     border: 1px solid red;
+}
+
+#secondb {
+     width: 100%;
+     background-color: #fc2779;
+     color: #ffff;
+     font-size: 16px;
+     padding: 15px;
+     border: none;
+     margin-top: 20px;
+     cursor: pointer;
+     font-weight: bold;
+     margin-top: 30vh;
+}
