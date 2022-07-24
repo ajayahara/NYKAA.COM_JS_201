@@ -129,3 +129,6 @@ appendData(cartlist)
 function myFunc(){
     window.location.href="logincheck.html"
 }
+function myFunction(){
+    window.location.href="login.html"
+}

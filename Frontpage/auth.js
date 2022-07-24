@@ -11,7 +11,7 @@ bt2.addEventListener("click", function () {
      if (otp == 1234) {
           localStorage.setItem("userStatus", "online")
           alert("login successfull")
-          window.location.href = "Frontpage.html";
+          window.location.href = "index.html";
      } else {
           alert("invalid otp")
      }
