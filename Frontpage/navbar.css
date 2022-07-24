@@ -1,8 +1,8 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 #navbarbox{
   height: auto;
   width: auto;
@@ -419,6 +419,7 @@ hr{
 } */
 #navbar1 ul li:hover #makeup{
   display: block;
+  background-color: white;
   position: absolute;
   margin-top:1.1%;
   width: 70%;
@@ -437,6 +438,7 @@ hr{
 } */
 #navbar1 ul li:hover #makeup #makeup1{
   display: block;
+  background-color: white;
   /* position: absolute; */
   margin-top:-1%;
   width: 20%;
@@ -484,6 +486,7 @@ hr{
 } */
 #sidebar ul li:hover #make #make1{
   display: block;
+  background-color: white;
   /* position: absolute; */
   margin-top:3%;
   transition: 0.25 ease-in-out;
@@ -560,6 +563,7 @@ hr{
   width: 23%;
   height: auto;
   gap:10%;
+  background-color: white;
   justify-content: right;
   line-height:2em;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -582,6 +586,7 @@ hr{
 }
 #sidebar ul li:hover #makee #makee3{
   display: block;
+  /* background-color: white; */
   /* position: absolute; */
   margin-top:3%;
   width: 45%;
@@ -640,6 +645,7 @@ hr{
 }
 #sidebar ul li:hover #makeee #makeee1{
   display: block;
+  background-color: white;
   transition: 0.25 ease-in-out;
   margin-top:2%;
   width: 30%;
@@ -683,6 +689,7 @@ hr{
 } */
 #navbar1 ul li:hover #makeup5{
   display: block;
+  background-color: white;
   position: absolute;
   margin-top:3%;
   width: 70%;
@@ -737,6 +744,7 @@ margin-left: -60%;
 }
 #navbar1 ul li:hover #makeup3 #makeup4{
   display: block;
+  background-color: white;
   /* position: absolute; */
   margin-top:-1%;
   width: 20%;
@@ -762,6 +770,7 @@ margin-left: -60%;
 } */
 #navbar1 ul li:hover #makeup8{
   display: block;
+  background-color: white;
   position: absolute;
   margin-top:3%;
   width: 70%;

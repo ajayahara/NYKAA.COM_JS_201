@@ -64,9 +64,17 @@ function Append(data){
       button2.innerText="Add To Bag"
       button2.addEventListener("click",function(){
          localStorage.setItem("nykaa",JSON.stringify(el))
+      
       })
       div2.append(button1,button2);
+      // div2.addEventListener("click",function(){
+      //    window.location.href="productDetails.html"
+      // })
       div.append(div1,head1,head2,head3,div2)
+      div.addEventListener("click",function(){
+         localStorage.setItem("nykaa",JSON.stringify(el))
+         window.location.href="productDetails.html"
+      })
       container.append(div);
    });
 }
@@ -77,3 +85,7 @@ select.addEventListener("change",function(){
    console.log(q);
    getData(q);
 })
+// button2.addEventListener("click",function(){
+//    localStorage.setItem("nykaa",JSON.stringify(el))
+   
+// })

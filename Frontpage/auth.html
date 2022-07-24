@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
-     <link rel="stylesheet" href="cssfiles/signup.css">
+     <link rel="stylesheet" href="auth.css">
 </head>
 
 <body>
@@ -21,16 +21,23 @@
                     </svg>
                </button>
                <h2>
-                    LOGIN / REGISTER
+                    REGISTER
                </h2>
           </div>
           <hr>
-          <input id="input" type="text" placeholder="Enter Phone No">
-          <button id="secondb">PROCEED</button>
+          <h3>Welcome to Nykaa!</h3>
+          <p> <span>Register now and get</span> <span id="span2">2000 Reward Points!</span></p>
+          <p id="auth"></p>
+          <p>Please enter the OTP sent to verify your phone number</p>
+          <p id="time"></p>
+          <div id="verifyotp">
+               <span><input type="number" id="otp" placeholder="Enter Otp"></span><span id="resend" onclick="setting()">Resend Otp</span>
+          </div>
+          <button id="secondb">VERIFY</button>
      </div>
 </body>
 
 </html>
-<script src="scripts/signup.js">
-   
+<script src="auth.js">
+    
 </script>

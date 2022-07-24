@@ -144,3 +144,6 @@ document.querySelector("#editor_choice_2").append(ed_img);
 // left_key.onclick=function(){
 //     sliderprodto.style.transform="translateX(0.4%)"
 // }
+function myFunc(){
+    window.location.href="search.html";
+}
